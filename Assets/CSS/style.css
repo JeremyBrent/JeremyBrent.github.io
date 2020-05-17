@@ -50,7 +50,7 @@
     height:150px;
     width:150px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px 4px;
-    overflow:hidden
+    overflow:hidden;
 }
 
 .indlogo {
@@ -61,3 +61,21 @@
     margin-left:auto;
     margin-right:auto;
 } 
+
+ /* Individual logos  */
+.jup {
+    transform: scale(2.4)
+}
+
+.post {
+    transform: scale(.85);
+}
+
+.num {
+    transform: scale(2.2);
+    margin-top: 47px;
+}
+
+.flask {
+    transform: scale(.92);
+}
