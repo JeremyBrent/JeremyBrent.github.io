@@ -5,7 +5,7 @@
 .bg-cover {
     background-size: cover !important;
     }
-body{min-height:200vh;}
+
 .navbar-default{
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
@@ -13,9 +13,11 @@ body{min-height:200vh;}
     width: 100%; /* Full width */
     transition:500ms ease;
     background-color:transparent;
+    z-index: 99;
     }
+
 .navbar-default.scrolled{
-      background:#000;
+    background-color:rgb(45, 47, 62);
     }
 
 
