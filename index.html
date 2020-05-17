@@ -2,45 +2,150 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>My Bio</title>
-  <link rel="stylesheet" type="text/css" href='style.css'>
+  <title> Jeremy Brent </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href='Assets/CSS/style.css'>
+  <script src="Assets/js/file.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"nintegrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script async src="//jsfiddle.net/wamosjk/ufhp9s15/embed/"></script>
 </head>
 
-<body class='body'>
-  <h1 class="name"> Jeremy Brent </h1>
-  <img class="headshot" src="Images/Headshot.jpg" alt="Headshot image" style="width:200px;height:300px;" >
-  <p class="bio"> <strong>About me:</strong> Aspiring Data Scientist self-motivated to acquire the skills necessary 
-    <br>to adapt in our quickly evolving digital world. Capable of working independently 
-    <br>and collaborating with diverse teams in complex and uncertain environments. 
-    <br>Constantly working to understand psychosocial principles of perception and social interaction. 
-    <br>Currently self-learning SQL, Machine Learning, and NLP. Brings a passion for distilling complex 
-    <br>topics into understandable concepts to develop data driven narratives.
-  </p>
-
+<body aria-busy='true'>
   
-  <ul> <h4>Contact Me</h4>
+  <nav class="navbar navbar-default navbar-fixed-top navbar-dark navbar-expand-lg">
+    <div class='container'>
+      <a class="navbar-brand" href=>Jeremy Brent </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#projects">Projects</a>
+          <a class="nav-item nav-link" href="#">Expereince</a>
+          <a class="nav-item nav-link" href="#">Skills</a>
+          <a class="nav-item nav-link" href="#">Connect</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Wrapper -->
+  <div style="background: url('Assets/Images/background.jpg')" class="page-holder bg-cover">
+
+    <div class="container py-5">
+      <header class="text-center text-white py-5">
+        <h1 class="display-4 font-weight-bold mb-4"> Welcome to my Portfolio</h1>
+        <p class="lead mb-0">Create a responsive full-page background image window using Bootstrap 4.</p>
+        <p class="font-italic">Snippet By <a href="https://bootstrapious.com" class="text-white">
+            <u>Bootstrapious</u></a>
+        </p>
+      </header>
+
+      <div class="text-white">
+        <p class="lead">It's not a good approch to deal directly with <code class="bg-white px-2 py-1 rounded">body</code> So, create a wrapper container and make it a full-window height.</p>
+        <p class="lead">Set the wrapper initial height to full window height using <code class="bg-white px-2 py-1 rounded">min-height: 100vh</code></p>
+        <p class="lead">Use <code class="bg-white px-2 py-1 rounded">.bg-cover</code> to make the background fit all viewports.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class='container-fluid'>
+    <div class='row'>
+      <h1 class='header' id='about'> About Me</h1>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-3 col-12'>
+          <img class='img-fluid headshot' src='Assets/Images/Headshot.jpg'>
+        </div>
+        <div class='col-6 summary'>
+          <h2> A passionate learner working to better myself in all aspects of life.</h2>
+          <p> Whether I’m implementing self-taught concepts into a project, grabbing lunch with friends, or snowboarding down the nearest mountain, I can always be found working to improve myself, helping others, and having fun.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='container-fluid'>
+    <div class='row'>
+      <h1 class='header' id='projects'> Projects</h1>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-3 col-12'>
+          <img class='img-fluid headshot' src='Assets/Images/Headshot.jpg'>
+        </div>
+        <div class='col-6 summary'>
+          <h2> A passionate learner working to better myself in all aspects of life.</h2>
+          <p> Whether I’m implementing self-taught concepts into a project, grabbing lunch with friends, or snowboarding down the nearest mountain, I can always be found working to improve myself, helping others, and having fun.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+    <div class="view" style="background-image: url('Assets/Images/background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+       Mask & flexbox options
+      <div class="mask rgba-gradient align-items-center">
+         Content 
+        <div class="container">
+          Grid row
+          <div class="row mt-5">
+            Grid column
+            <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-center">
+              <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">Sign up right now! </h1>
+              <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+              <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga
+              nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea
+              dolor molestiae, quisquam iste, maiores. Nulla.</h6>
+              <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s">Learn more</a>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div> -->
+  
+  <!--
+    <h1 class="name"> Jeremy Brent </h1>
+    <img class="headshot" src="Assets/Images/Headshot.jpg" alt="Headshot image" style="width:200px;height:300px;" >
+    <p class="bio"> <strong>About me:</strong> Aspiring Data Scientist self-motivated to acquire the skills necessary 
+      <br>to adapt in our quickly evolving digital world. Capable of working independently 
+      <br>and collaborating with diverse teams in complex and uncertain environments. 
+      <br>Constantly working to understand psychosocial principles of perception and social interaction. 
+      <br>Currently self-learning SQL, Machine Learning, and NLP. Brings a passion for distilling complex 
+      <br>topics into understandable concepts to develop data driven narratives.
+    </p>
+  </div>
+    
+    <ul> <h3>Contact Me</h3>
+      <hr>
+      <li> Email: <u>JeremyBrentData@gmail.com</u> </a> </li>
+      <li> Cell Phone: (732) 710-0865</li>
+    </ul>
+
+    <ul> <h3> Social Media </h3>
+      <hr>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/jeremy-brent-145991136/" target="_blank"> My LinkedIn Profile</a></li>
+      <li>Github: <a href="https://github.com/JeremyBrent" target="_blank"> My GitHub Repo</a></li>
+    </ul>
+
+    <ul> <h3>Projects</h3> 
     <hr>
-    <li> Email: <u>JeremyBrentData@gmail.com</u> </a> </li>
-    <li> Cell Phone: (732) 710-0865</li>
-  </ul>
+      <li><a href="/SQL_challenge" target="_blank"> Exploring SQL </a></li>
+      <li><a href="/API_Challenge" target="_blank"> Exploring APIs </a></li>
+    </ul> 
 
-  <ul> <h4> Social Media </h4>
+    <ul> <h3> Education</h3>
     <hr>
-    <li>LinkedIn: <a href="https://www.linkedin.com/in/jeremy-brent-145991136/" target="_blank"> My LinkedIn Profile</a></li>
-    <li>Github: <a href="https://github.com/JeremyBrent" target="_blank"> My GitHub Repo</a></li>
-  </ul>
-
-  <ul> <h4>Projects</h4> 
-  <hr>
-    <li><a href="/SQL_challenge" target="_blank"> Exploring SQL </a></li>
-    <li><a href="/API_Challenge" target="_blank"> Exploring APIs </a></li>
-  </ul> 
-
-  <ul> <h4> Education</h4>
-  <hr>
-    <li> Rutgers University, Certificate in Data Science (Feb 2020 - Aug 2020)</li>
-    <li> Clark University, Bachelor of Arts, Pscyhology, Biology (2015-2019) </li>
-  </ul>
+      <li> Rutgers University, Certificate in Data Science (Feb 2020 - Aug 2020)</li>
+      <li> Clark University, Bachelor of Arts, Pscyhology, Biology (2015-2019) </li>
+    </ul>
+  </div> -->
 </body>
 
 
