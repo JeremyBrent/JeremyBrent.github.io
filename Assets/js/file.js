@@ -1,3 +1,3 @@
 $(window).scroll(function(){
-	$('nav').toggleClass('scrolled', $(this).scrollTop() > 400);
+	$('.navbar-default').toggleClass('scrolled', $(this).scrollTop() > 400);
 });
