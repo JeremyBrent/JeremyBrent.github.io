@@ -1,10 +1,10 @@
 .page-holder {
-    min-height: 75vh;
-    }
+    min-height: 85vh;
+}
   
 .bg-cover {
     background-size: cover !important;
-    }
+}
 
 .navbar-default{
     overflow: hidden;
@@ -14,11 +14,11 @@
     transition:500ms ease;
     background-color:transparent;
     z-index: 99;
-    }
+}
 
 .navbar-default.scrolled{
     background-color:rgb(45, 47, 62);
-    }
+}
 
 
 .header {
@@ -36,11 +36,18 @@
     margin-bottom:25px;
     border-radius:5px;
     box-shadow:rgba(0, 0, 0, 0.15) 0px 0px 4px 4px;
-    
 }
 
 .summary {
     text-align:left;
     margin-left:50px;
     margin-top:100px;
+}
+
+.logo {
+    display: relative;
+    border-radius:50%;
+    height:150px;
+    width:150px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px 4px;
 }
