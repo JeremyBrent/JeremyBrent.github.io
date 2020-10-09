@@ -109,7 +109,7 @@ body {
     z-index: 0;
 }
 
-.proj {
+.proj, .edu {
     height: 700px;
     width: auto;
     border-radius: 5px;
@@ -119,7 +119,8 @@ body {
     background-color: white;
 }
 
-.proj-image{
+
+.proj-image, .edu-image {
     height: 60%;
     width: 100%;
     
@@ -136,13 +137,87 @@ body {
     background-image:url("../Images/revenue.jpg");
 }
 
-.proj-label {
+.clarku {
+    background-image:url("../Images/clarku.jpg");
+}
+.ru {
+    background-image:url("../Images/ru.jpg");
+}
+
+.proj-label, .edu-label {
     font-weight: 400;
     padding-top: 25px;
     padding-left: 25px;
 }
 
-.proj-desc {
+.exp-ques {
+    padding-top: 25px;
+    padding-left: 25px;
+    font-weight: 300;
+}
+
+.comp-desc{
+    font-weight: 200;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.exp-desc {
+    font-weight: 200;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.exp-box {
+    position: relative;
+    height: 500px;
+    width: auto;
+    border-radius: 5px;
+    box-shadow:rgba(0, 0, 0, 0.15) 0px 0px 4px 4px;
+    margin: 25px 0px 25px;
+    padding: 0;
+    background-color: white;
+}
+
+.exp-body{
+    height:67%
+}
+.exp-header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 20%;
+}
+
+.exp-image{
+    position: absolute;
+    transform: scale(.25);
+    left:-130px;
+}
+
+.exp-company {
+    font-weight: 300;
+    padding-top: 30px;
+    margin-left: 150px;
+    position: absolute;
+}
+
+.exp-title {
+    position: absolute;
+    right:0;
+    padding-right:20px;
+    padding-top: 30px;
+    font-weight: 200;
+}
+
+.exp-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height:13%;
+    background-color: #f0f0f0;
+}
+
+
+.proj-desc, .edu-desc {
     font-weight: 200;
     padding-top: 25px;
     padding-left: 25px;
@@ -152,10 +227,10 @@ body {
 
 .logo-text {
     font-size: 22px;
+    padding-top: 5px;
 }
-
 
 .logo:hover {
     transition: .5s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
