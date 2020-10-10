@@ -146,7 +146,7 @@ body {
     
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
 }
 
 .proj-image1 {
@@ -186,6 +186,12 @@ body {
     font-weight: 200;
     padding-top: 20px;
     padding-left: 10px;
+}
+
+.comp-date {
+    font-weight: 200;
+    padding-top: 20px;
+    padding-left: 25px;
 }
 
 .exp-box {
@@ -271,44 +277,8 @@ body {
     transform: scale(1.1);
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    body{
-        position: absolute;
-        width: fit-content;
-    }
-
-    .proj {
-        height: 1050px;
-    }
-
-    .proj-desc, .proj-label{
-        padding-top: 10px;
-        margin-bottom: 0px;
-    }
-
-    .proj-us {
-        height: 800px;
-    }
- 
-    .edu {
-        height:800px
-    }
-    .summary {
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        transform: translate(0px,-10px);
-        text-align: center;
-    }
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 992px and down) */
+@media only screen and (max-width: 992px) {
     .summary {
         margin-top: 10px;
         margin-left: auto;
@@ -336,9 +306,8 @@ body {
     .exp-bottom {
         margin-top: 10px;
     }
-
     .edu {
-        height: 650px;
+        height: 750px;
     }
 
     .edu-desc{
@@ -346,8 +315,65 @@ body {
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+/* Small devices (portrait tablets and large phones, 768ox and down) */
+@media only screen and (max-width: 768px) {
+    .edu {
+        height: 600px;
+    }
+
+    .exp-box {
+        height: 600px;
+    }
+
+    .comp-desc {
+        padding-top: 35px;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        position: absolute;
+        width: fit-content;
+    }
+
+    .proj {
+        height: 1050px;
+    }
+
+    .proj-desc, .proj-label{
+        padding-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .proj-us {
+        height: 800px;
+    }
+ 
+    .edu {
+        height:750px
+    }
+    .summary {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(0px,-10px);
+        text-align: center;
+    }
+
+    .headshot{
+        transform: translateX(0,13000px);
+    }
+
+}
+
+
+
+/* Large devices (laptops/desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
