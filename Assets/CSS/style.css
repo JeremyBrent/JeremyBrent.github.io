@@ -443,9 +443,12 @@ body {
     }
  
     .edu {
-        height:800px
+        height:550px
     }
 
+    .edu-desc {
+        padding-top: 0px;
+    }
 
     .summary {
         margin-top: 10px;
@@ -496,7 +499,7 @@ body {
     }
 
     .exp-company {
-        position: relative;
+        position: relativee;
         padding-top: 10px;
         padding-right: 20px;
         margin-left: 147px;
@@ -504,12 +507,116 @@ body {
     }
     .exp-title {
         padding-top: 0px;
+        padding-right: 0px;
+        margin-left: 132px;
+        LEFT:0
+    }
+
+    .axio-title {
+        padding-right: 0;
+        margin-top: 75px;
+        margin-left: 110px;
     }
 
     .ffpi-image {
         transform: scale(.15) translate(0,200px);
     }
 }
+
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 450px) {
+    .proj-rev {
+        height:875px
+    }
+
+    .edu {
+        height: 575px;
+    }
+
+    .clarku-box {
+        height: 650px;
+    }
+}
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+    .edu {
+        height: 625px;
+    }
+}
+/* Extra extra small devices (phones, 360px and down) */
+@media only screen and (max-width: 375px) {
+    .ffpi-box {
+        height: 775px;
+    }
+
+    .axio-title {
+        margin-left: 90px;
+        padding-top: 5px;
+    }
+
+    .proj-us {
+        height:850px;
+    }
+
+    .proj-rev {
+        height: 1050px;
+    }
+
+    .edu {
+        height: 710px
+    }
+    
+
+}
+
+/* Extra extra extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+    .exp-box {
+        height: 800px;
+    }
+    .ffpi-box {
+        height: 850px;
+    }
+
+    .proj-rev {
+        height: 1025px;
+    }
+
+    .proj-us{
+        height: 850px;
+    }
+
+    .edu-label, .edu-desc {
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+
+    .proj-desc, .proj-label {
+        padding-left: 15px;
+    }
+    .edu {
+        height: 700px;
+    }
+
+    .exp-desc, .exp-ques,.comp-desc {
+        padding-left: 15px;
+    }
+    .clarku-box {
+        height: 700px;
+    }
+
+    .exp-title{ 
+        margin-left: 85px;
+    }
+    .axio-title {
+        margin-left: 45px;
+        padding-top: 10px;
+    }
+
+    
+}
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -520,4 +627,5 @@ body {
     .about-me {
         height: 415px;
     }
+    
 }
