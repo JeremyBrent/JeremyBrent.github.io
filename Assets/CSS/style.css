@@ -8,11 +8,10 @@ html {
     width: 100%; 
     min-height: 100%; 
     scroll-behavior: smooth;
+    height: 100%;
 } 
  
 body { 
-    width: inherit; 
-    min-height: inherit; 
     margin: 0; 
     padding: 0; 
 } 
@@ -23,6 +22,10 @@ body {
   
 .bg-cover {
     background-size: cover !important;
+}
+
+.rwd-break {
+    display:none;
 }
 
 .navbar-default{
@@ -127,10 +130,25 @@ body {
 body {
     background: url("../Images/grid.jpg");
     z-index: 0;
+    height: 100%;
 }
 
-.proj, .edu {
-    height: 700px;
+.proj {
+    height: 550px;
+    width: auto;
+    border-radius: 5px;
+    box-shadow:rgba(0, 0, 0, 0.15) 0px 0px 4px 4px;
+    margin: 25px 0px 25px;
+    padding: 0;
+    background-color: white;
+}
+
+.proj-us {
+    height: 500px;
+}
+
+.edu {
+    height: 625px;
     width: auto;
     border-radius: 5px;
     box-shadow:rgba(0, 0, 0, 0.15) 0px 0px 4px 4px;
@@ -143,7 +161,6 @@ body {
 .proj-image, .edu-image {
     height: 60%;
     width: 100%;
-    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -196,7 +213,7 @@ body {
 
 .exp-box {
     position: relative;
-    height: 500px;
+    height: 475px;
     width: auto;
     border-radius: 5px;
     box-shadow:rgba(0, 0, 0, 0.15) 0px 0px 4px 4px;
@@ -277,8 +294,11 @@ body {
     transform: scale(1.1);
 }
 
-/* Medium devices (landscape tablets, 992px and down) */
-@media only screen and (max-width: 992px) {
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     .summary {
         margin-top: 10px;
         margin-left: auto;
@@ -287,7 +307,7 @@ body {
     }
 
     .headshot{
-        transform: scale(.5) translate(0px,-450px) ;
+        transform: scale(.5) translate(0px,-450px);
         margin: 10px;
         top:0;
     }
@@ -314,20 +334,85 @@ body {
         padding-top: 15px;
     }
 }
-
-/* Small devices (portrait tablets and large phones, 768ox and down) */
-@media only screen and (max-width: 768px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
     .edu {
         height: 600px;
     }
 
     .exp-box {
-        height: 600px;
+        height: 650px;
     }
 
     .comp-desc {
         padding-top: 35px;
     }
+
+    .proj-rev {
+        height: 700px;
+    }
+
+    .proj-us {
+        height: 525px;
+    }
+
+    .ffpi-box {
+        height: 675px;
+    }
+
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .proj-rev {
+        height:650px;
+    }
+
+    .exp-ffpi{
+        padding-top:15px;
+    }
+
+    .rwd-break{
+        display: block;
+    }
+
+    .ffpi-box {
+        height: 525px;
+    }
+
+    .headshot {
+        transform: scale(1);
+    }
+
+    .summary {
+        transform: translate(0px, 75px);
+    }
+
+    .about-me {
+        height: 350px;
+    }
+
+    .exp-box {
+        height: 500px;
+    }
+
+    .ffpi-box {
+        height: 550px;
+    }
+
+    .rwd-break2 {
+        display: none;
+    }
+
+    .exp-ffpi {
+        padding-top: 20px;
+        margin-left: 150px;
+    }
+
+
+
 }
 
 
@@ -338,10 +423,16 @@ body {
         width: fit-content;
     }
 
+    .navbar-default {
+        z-index: 4;
+    }
     .proj {
         height: 1050px;
     }
 
+    .rwd-break2 {
+        display: none;
+    }
     .proj-desc, .proj-label{
         padding-top: 10px;
         margin-bottom: 0px;
@@ -352,8 +443,10 @@ body {
     }
  
     .edu {
-        height:750px
+        height:800px
     }
+
+
     .summary {
         margin-top: 10px;
         margin-left: auto;
@@ -363,17 +456,68 @@ body {
     }
 
     .headshot{
-        transform: translateX(0,13000px);
+        transform: translateX(0,13px);
     }
 
-}
+    .exp-box {
+        height: 700px;
+    }
 
+    .exp-body {
+        height: 72%;
+    }
 
+    .exp-header {
+        height:22%;
+    }
+    .exp-bottom {
+        height: 6%;
+        bottom: 0;
+    }
 
-/* Large devices (laptops/desktops, 1200px and down) */
-@media only screen and (max-width: 1200px) {
+    .exp-ques {
+        padding-top:15px
+    }
 
+    .exp-ffpi {
+        position: relative;
+        margin-left: 132px ;
+    }
+
+    .comp-date {
+        padding-top: 10px;
+    }
+    .axio-header {
+        height: 17%;
+    }
+
+    .axio-body {
+        height: 77%;
+    }
+
+    .exp-company {
+        position: relative;
+        padding-top: 10px;
+        padding-right: 20px;
+        margin-left: 147px;
+        margin-bottom: 0px;
+    }
+    .exp-title {
+        padding-top: 0px;
+    }
+
+    .ffpi-image {
+        transform: scale(.15) translate(0,200px);
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 1200px) {
+    .exp-box {
+        height: 475px;
+    }
+
+    .about-me {
+        height: 415px;
+    }
+}
